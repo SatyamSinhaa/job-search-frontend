@@ -12,10 +12,9 @@ const Login = () => {
         try {
             const response = await axios.post(`http://localhost:8080/users/login/${email}/${password}`);
             const userData = response.data;
-            console.log(userData);
             
             // Store user data in localStorage
-            localStorage.setItem('user', JSON.stringify(userData));
+            localStorage.setItem('userId', JSON.stringify(userData.userId));
 
             // Redirect to list of jobs
             navigate('/jobs');

@@ -1,7 +1,30 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 const Profile = () => {
-    const user = JSON.parse(localStorage.getItem('user'));
+    const userId = JSON.parse(localStorage.getItem('userId'));
+    const [user, setUser] = useState({});
+    
+    useEffect(()=>{
+        const fetchUserData = async () => {
+            try {
+                const response = await axios.get(`http://localhost:8080/users/${userId}`);
+                console.log("yes");
+                console.log(response.data);
+                
+                setUser(response.data);
+            } 
+            catch (error) {
+                alert('Could not fetch user data. Please try again later.');
+            }
+        }
+        // if (userId) {
+        //     fetchUserData();
+        // } else {
+        //     alert('User ID is missing.');
+        // }
+        fetchUserData();
+    },[userId])
 
     return (
         <div>
