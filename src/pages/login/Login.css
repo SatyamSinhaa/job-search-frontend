@@ -1,0 +1,103 @@
+.signin-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+}
+
+.signin-left img {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.signin-right {
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.signin-right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.signin-right p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.signin-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.signin-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+.signin-options a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+button[type="submit"] {
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.social-login {
+    text-align: center;
+}
+
+.social-login p {
+    margin: 15px 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.social-icons button {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #666;
+}
+
+.social-icons .facebook {
+    color: #4267b2;
+}
+
+.social-icons .twitter {
+    color: #1da1f2;
+}
+
+.social-icons .google {
+    color: #db4437;
+}
+
+@media (max-width:426px) {
+    .signin-left img{
+        display: none;
+    }
+}

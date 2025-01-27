@@ -1,0 +1,101 @@
+/* JobCard.css */
+.job-card {
+    border: 1px solid #eee; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 500px;
+  }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .job-title-company {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .job-title {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+      font-size: 0.9rem;
+      color: gray;
+  }
+  
+  .rating {
+      font-size: 0.8rem;
+      color: orange;
+  }
+  
+  .star {
+      margin-left: 3px;
+  }
+  
+  .company-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-placeholder {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .job-details {
+    margin-bottom: 10px;
+  }
+  
+  .job-info {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 5px;
+  
+  }
+  
+  .job-description {
+    margin-bottom: 10px;
+      font-size: 0.9rem;
+  }
+  
+  .job-tags {
+    display: flex;
+    flex-wrap: wrap; /* Allows tags to wrap to the next line */
+    gap: 5px;
+  }
+  
+  .job-tag {
+    background-color: #e0e0e0; /* Light gray background for tags */
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  
+  .job-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: gray;
+  }
+  
+  .days-ago{
+  
+  }
+  
+  .save-job{
+      cursor: pointer;
+  }
